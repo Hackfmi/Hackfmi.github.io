@@ -107,6 +107,8 @@
 <p>В момента хората се опитват да подкарат C#-а и Java-та под Window-ски виртуален сървър (Azure).
 При неуспех, Parser-a ще се пренапише на Java / JavaScript</p>
 
+<p><strong>В момента, този Web Service за логване представлява Security Issue</strong> за потребителското име и паролата на всеки един студент, тъй като нямаме никакъв контрол в/у 3rd party apps, които го използват.</p>
+
 <h2>
 <a name="fmi-feedback" class="anchor" href="#fmi-feedback"><span class="octicon octicon-link"></span></a>FMI Feedback</h2>
 
@@ -133,20 +135,52 @@
 </ul><h2>
 <a name="the-jack---democracy-%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B0-%D0%B7%D0%B0-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B2%D0%B0%D0%BD%D0%B5-%D0%BD%D0%B0-%D0%B8%D0%B7%D0%B1%D0%BE%D1%80%D0%BD%D0%B8" class="anchor" href="#the-jack---democracy-%D0%A1%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B0-%D0%B7%D0%B0-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B2%D0%B0%D0%BD%D0%B5-%D0%BD%D0%B0-%D0%B8%D0%B7%D0%B1%D0%BE%D1%80%D0%BD%D0%B8"><span class="octicon octicon-link"></span></a>The Jack - Democracy (Системата за записване на изборни)</h2>
 
+<p><a href="http://hackfmi.com/hackfmi-winners/">Победителите на HackFMI 1 - отбор The Jack направиха изцяло нов интерфейс и нова система за записване на изборните дисциплини през СУСИ.</a></p>
+
+<p>Системата използва опашки, captcha code и real-time обновяване на дисциплините, като освен това дава и analytics слой за преподавателите (Да видят какъв интерес има към тяхната дисциплина)</p>
+
+<p><img src="http://hackfmi.com/wp-content/uploads/2013/04/IMG_6662-e1366056826606.jpg" alt="Отбор The Jack"><img src="http://hackfmi.com/wp-content/uploads/2013/04/TheJack_Screenshot.png" alt="Screenshot от Системата"></p>
+
 <h3>
 <a name="status---on-hold" class="anchor" href="#status---on-hold"><span class="octicon octicon-link"></span></a>Status - On Hold</h3>
+
+<p>Проектът е задържан и чака интегриране с Университетската система СУСИ, тъй като трябва да може да пише в базата кои студенти какви изборни са пожелали.
+Лошото в случая е, че чакането не зависи от наша страна (организатори на HackFMI, студенти, отбор The Jack), а от университетска страна.</p>
+
+<p>Проектът ще стои On Hold, докато УЦИКТ не проявят желание за интегриране. До тогава - всички чакаме &gt;&lt;</p>
 
 <h3>
 <a name="details-4" class="anchor" href="#details-4"><span class="octicon octicon-link"></span></a>Details</h3>
 
-<h2>
+<ul>
+<li>Кодът на приложението е достъпен тук - <a href="https://github.com/IvanVergiliev/democracy">https://github.com/IvanVergiliev/democracy</a>
+</li>
+<li>Демо версията на проекта е онлайн - <a href="http://electives.herokuapp.com/">http://electives.herokuapp.com/</a> - За достъп - <strong>admin / admin</strong>
+</li>
+</ul><h2>
 <a name="clg-inc---%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D0%B8-%D0%B7%D0%B0-%D0%A1%D0%A3%D0%A1%D0%98" class="anchor" href="#clg-inc---%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D0%B8-%D0%B7%D0%B0-%D0%A1%D0%A3%D0%A1%D0%98"><span class="octicon octicon-link"></span></a>CLG Inc - Профили за СУСИ</h2>
+
+<p><a href="http://hackfmi.com/hackfmi-winners/">Отборът, който спечели трето място на HackFMI 1</a>, направи система, която показва профил на студент с цялата налична информация за неговото следване.</p>
+
+<p>В момента, за да разбереш дали си взел всичко, което трябва, трябва да отидеш в Отдел Студенти и цялата проверка да се направи на ръка.</p>
+
+<p><img src="https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-frc1/901718_365142006939871_1688440204_o.jpg" alt="Отбор CLG Inc"><img src="http://hackfmi.com/wp-content/uploads/2013/04/massive-octo-ninja1.png" alt="Screenshot на системата"></p>
 
 <h3>
 <a name="status---on-hold-1" class="anchor" href="#status---on-hold-1"><span class="octicon octicon-link"></span></a>Status - On Hold</h3>
 
+<p>Проектът е задържан и отново чака достъп до Университетската система СУСИ, за да може да се вземат нужните данни на даден студент, за да се генерират графиките.
+Проблемът в случая е, че Университетът няма нито API за данни, нито добре структурирана база с информация за предметите.</p>
+
+<p>Проектът ще има бъдеще в момента, в който заживее СУСИ OAuth-a, който ще връща и Parse-ната от СУСИ информация за това какво е изкарал студента като предмети и изборни.</p>
+
 <h3>
 <a name="details-5" class="anchor" href="#details-5"><span class="octicon octicon-link"></span></a>Details</h3>
+
+<ul>
+<li>Кодът на проекта може да се намери тук - <a href="https://github.com/Vladimiroff/massive-octo-ninja">https://github.com/Vladimiroff/massive-octo-ninja</a>
+</li>
+</ul>
       </section>
     </div>
 
